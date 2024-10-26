@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="15dp"
+    app:cardMaxElevation="15dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_gravity="center"
+    tools:context=".ProfileList2Activity15">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/ntxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:layout_marginRight="60dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#00BCD4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/etxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#00BCD4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ntxt" />
+        <TextView
+            android:id="@+id/bodtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date of birth"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#00BCD4"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@id/etxt"
+            app:layout_constraintStart_toStartOf="@id/etxt"
+            app:layout_constraintTop_toBottomOf="@id/etxt" />
+        <TextView
+            android:id="@+id/Dtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="District"
+
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:textColor="#00BCD4"
+            app:layout_constraintEnd_toEndOf="@id/bodtxt"
+            app:layout_constraintStart_toStartOf="@id/bodtxt"
+            app:layout_constraintTop_toBottomOf="@id/bodtxt"  />
+        <TextView
+            android:id="@+id/mtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="mobile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#00BCD4"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@id/Dtxt"
+            app:layout_constraintStart_toStartOf="@id/Dtxt"
+            app:layout_constraintTop_toBottomOf="@id/Dtxt"  />
+
+        <ImageButton
+            android:id="@+id/ebtn"
+            android:layout_width="48dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toTopOf="@+id/bodtxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ntxt"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/dbtn"
+            android:layout_width="48dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ebtn"
+            app:layout_constraintVertical_bias="0.461" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
